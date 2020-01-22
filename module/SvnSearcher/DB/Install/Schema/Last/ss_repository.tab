@@ -1,0 +1,33 @@
+-- table: ss_repository
+-- Проиндексированные репозитории.
+create table
+  ss_repository
+(
+  repository_id                   integer                             not null
+  , repository_name               varchar2(100)                       not null
+  , last_all_index_date           date
+  , date_ins                      date                default sysdate not null
+  , constraint ss_repository_pk primary key
+    ( repository_id)
+    using index tablespace &indexTablespace
+  , constraint ss_repository_uk unique
+    ( repository_name)
+    using index tablespace &indexTablespace
+)
+/
+
+
+
+comment on table ss_repository is
+  'Репозитории [ SVN root: Module/SVNSearcher]'
+/
+comment on column ss_repository.repository_id is
+  'Id репозитория'
+/
+comment on column ss_repository.last_all_index_date is
+  'Дата последнего полного индексирования'
+/
+comment on column ss_repository.date_ins is
+  'Дата добавления записи'
+/
+

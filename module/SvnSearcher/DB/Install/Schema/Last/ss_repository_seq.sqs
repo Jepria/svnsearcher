@@ -1,0 +1,6 @@
+-- sequence: ss_repository_seq
+-- Последовательность для заполнения первичного ключа таблицы
+-- <ss_repository>.
+create sequence
+  ss_repository_seq
+/

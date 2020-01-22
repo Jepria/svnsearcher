@@ -1,0 +1,16 @@
+com.technology.exchange.svnsearcher.main.client
+com.technology.exchange.svnsearcher.main.client.entrance
+com.technology.exchange.svnsearcher.main.client.ui.main
+com.technology.exchange.svnsearcher.main.shared
+com.technology.exchange.svnsearcher.main.shared.text
+com.technology.exchange.svnsearcher.svnsearcher.client
+com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain
+com.technology.exchange.svnsearcher.svnsearcher.client.widget.list
+com.technology.exchange.svnsearcher.svnsearcher.server
+com.technology.exchange.svnsearcher.svnsearcher.server.dao
+com.technology.exchange.svnsearcher.svnsearcher.server.service
+com.technology.exchange.svnsearcher.svnsearcher.shared
+com.technology.exchange.svnsearcher.svnsearcher.shared.field
+com.technology.exchange.svnsearcher.svnsearcher.shared.record
+com.technology.exchange.svnsearcher.svnsearcher.shared.service
+com.technology.exchange.svnsearcher.svnsearcher.shared.text

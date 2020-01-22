@@ -1,0 +1,128 @@
+-- table: ss_file
+-- Файлы для индексирования.
+create table
+  ss_file
+(
+  file_id                         integer                             not null
+  , repository_name               varchar2(100)                       not null
+  , file_name                     varchar2(4000)                      not null
+  , svn_path                      varchar2(4000)                      not null
+  , revision                      integer                             not null
+  , author                        varchar2(100)                       not null
+  , svn_last_modification         timestamp with local time zone  not null
+  , file_size                     integer                             not null
+  , file_data                     blob
+  , ctx_format                    varchar2(10)
+  , ctx_charset                   varchar2(20)
+  , last_check_date               date                                not null
+  , last_refresh_date             date                                not null
+  , date_ins                      date                default sysdate not null
+  , constraint ss_file_pk primary key
+    ( file_id)
+    using index tablespace &indexTablespace
+  , constraint ss_file_uk unique (
+      repository_name
+      , svn_path
+    )
+    using index tablespace &indexTablespace
+  , constraint ss_file_ck_ctx_format check (
+      ctx_format in ( 'TEXT', 'BINARY', 'IGNORE')
+    )
+)
+/
+
+-- index: ss_file_last_check_date
+-- Индекс для поиска по дате последней проверки обновления в SVN.
+create index
+  ss_file_last_check_date
+on
+  ss_file (
+    last_check_date
+  )
+tablespace &indexTablespace
+/
+
+declare
+  preferenceExists number(1,0);
+begin
+  select
+    count(1)
+  into
+    preferenceExists
+  from
+    ctx_preferences
+  where
+    pre_name = upper( 'ss_lexer')
+  ;
+  if ( preferenceExists = 1 ) then
+    ctx_ddl.drop_preference( 'ss_lexer');
+  end if;
+  ctx_ddl.create_preference( 'ss_lexer', 'BASIC_LEXER');
+  ctx_ddl.set_attribute( 'ss_lexer', 'printjoins', '_-');
+end;
+/
+
+
+create index
+  ss_file_ctx_search
+on
+  ss_file( file_data)
+indextype is
+  ctxsys.context
+parameters(
+  '
+  filter ctxsys.auto_filter
+  format column ctx_format
+  charset column ctx_charset
+  lexer ss_lexer
+  '
+)
+/
+
+
+comment on table ss_file is
+  'Файлы для индексирования [ SVN root: Module/SVNSearcher]'
+/
+comment on column ss_file.file_id is
+  'Id записи'
+/
+comment on column ss_file.repository_name is
+  'Наименование репозитория ( не URL, без имени сервера)'
+/
+comment on column ss_file.svn_path is
+  'Относительный путь к файлу в рамках репозитория SVN'
+/
+comment on column ss_file.file_name is
+  'Имя файла'
+/
+comment on column ss_file.revision is
+  'Номер ревизии ( правки в SVN)'
+/
+comment on column ss_file.author is
+  'Автор в SVN'
+/
+comment on column ss_file.svn_last_modification is
+  'Дата модификации файла в SVN'
+/
+comment on column ss_file.file_size is
+  'Размер файла'
+/
+comment on column ss_file.file_data is
+  'Данные файла'
+/
+comment on column ss_file.ctx_format is
+  'Колонка для формата индексируемых данных в терминах Oracle Text'
+/
+comment on column ss_file.ctx_charset is
+  'Колонка для кодировки индексируемых данных в терминах Oracle Text'
+/
+comment on column ss_file.last_check_date is
+  'Дата последней проверки файла в SVN'
+/
+comment on column ss_file.last_refresh_date is
+  'Дата последнего обновления данных из SVN'
+/
+comment on column ss_file.date_ins is
+  'Дата добавления записи'
+/
+

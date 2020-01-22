@@ -1,0 +1,25 @@
+-- table: ss_index_directory_tmp
+-- Директории для индексирования.
+create global temporary table
+  ss_index_directory_tmp
+(
+  directory_svn_path               varchar2(1000)                         not null
+  , svn_last_modification          timestamp with local time zone
+  , constraint ss_index_directory_tmp_pk primary key
+    ( directory_svn_path)
+)
+on commit preserve rows
+/
+
+
+
+comment on table ss_index_directory_tmp is
+  'Директории для индексирования [ SVN root: Module/SVNSearcher]'
+/
+comment on column ss_index_directory_tmp.directory_svn_path is
+  'Путь директории'
+/
+comment on column ss_index_directory_tmp.svn_last_modification is
+  'Дата/время последнего изменения файла в SVN'
+/
+

@@ -1,0 +1,6 @@
+-- sequence: ss_file_seq
+-- Последовательность для заполнения первичного ключа таблицы
+-- <ss_file>.
+create sequence
+  ss_file_seq
+/

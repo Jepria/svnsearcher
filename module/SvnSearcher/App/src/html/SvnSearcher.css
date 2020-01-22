@@ -1,0 +1,29 @@
+.svnSearcher-header {
+  text-align: center; 
+  vertical-align: middle;
+}
+
+.svnSearcher-text {
+  text-align:left;
+  margin: 0;  
+}
+
+.svnSearcher-title {  
+  font-size: 20px; 
+  margin: 20px 0;
+}
+
+#searchResults {
+  overflow: hidden;  
+}
+
+#searchResults .svnSearcher-searchRow td {
+  background-color: #f6f6f6;
+  border-bottom: 20px solid white;
+}
+
+
+#searchParams .jepRia-MultiStateField-Label{
+  display: none;
+}
+

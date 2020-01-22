@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<batch short_name="SvnSearcherIndexTree_02">
+  <name>Индексирование всех ветвей в репозиториях SVN #2</name>
+  <batch_config>
+    <retry_count>3</retry_count>
+    <retry_interval>30</retry_interval>
+    <schedule>
+      <name>Ежедневно в 21:32</name>
+      <interval type="hh24">
+        <value>21</value>
+      </interval>
+      <interval type="mi">
+        <value>32</value>
+      </interval>
+    </schedule>
+    <option short_name="DirectoryMaskList" type="string" name="Список масок директорий для индексирования">
+      <value></value>
+    </option>
+    <option short_name="RepositoryNameList" type="string" name="Список репозиториев для индексирования">
+      <value_list>
+         <item>Budget</item>
+         <item>Business</item>
+         <item>DataWarehouse</item>
+         <item>DDWH</item>
+         <item>DiasoftRFB</item>
+         <item>Duty</item>
+         <item>ERS</item>
+      </value_list>
+    </option>
+    <option short_name="TimeLimitMinute" type="number" name="Лимит времени выполнения батча ( в минутах)">
+      <test_value>180</test_value>
+      <prod_value>180</prod_value>
+    </option>
+    <option short_name="Utf8FileMaskList" type="string" name="Список масок путей файлов SVN, которые интерпретируются как текстовые в UTF-8">
+      <value></value>
+    </option>
+  </batch_config>
+  <content id="1" job="initialization" module="Scheduler"/>
+  <content id="2" job="index_repository">
+    <condition id="1">true</condition>
+  </content>
+  <content id="3" job="commit" module="Scheduler">
+    <condition id="2">true</condition>
+  </content>
+  <content id="4" job="retry_batch" module="Scheduler">
+    <condition id="3">error</condition>
+    <condition id="3">skip</condition>
+  </content>
+</batch>

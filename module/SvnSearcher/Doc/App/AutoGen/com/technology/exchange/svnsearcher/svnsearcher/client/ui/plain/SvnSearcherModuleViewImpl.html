@@ -1,0 +1,675 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+SvnSearcherModuleViewImpl (SvnSearcher JavaDoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SvnSearcherModuleViewImpl (SvnSearcher JavaDoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../../index.html?com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SvnSearcherModuleViewImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain</FONT>
+<BR>
+Class SvnSearcherModuleViewImpl</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../../../resources/inherit.gif" ALT="extended by ">com.technology.jep.jepria.client.ui.plain.PlainModuleViewImpl
+      <IMG SRC="../../../../../../../../resources/inherit.gif" ALT="extended by "><B>com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain.SvnSearcherModuleViewImpl</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD>com.google.gwt.user.client.ui.IsWidget, <A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain">SvnSearcherModuleView</A>, com.technology.jep.jepria.client.ui.JepView&lt;com.technology.jep.jepria.client.ui.JepPresenter&gt;, com.technology.jep.jepria.client.ui.plain.PlainModuleView</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>SvnSearcherModuleViewImpl</B><DT>extends com.technology.jep.jepria.client.ui.plain.PlainModuleViewImpl<DT>implements <A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain">SvnSearcherModuleView</A></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>private static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#BAR_HEIGHT">BAR_HEIGHT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>private static&nbsp;com.google.gwt.dom.client.Style.Unit</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#BAR_UNIT">BAR_UNIT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>private &nbsp;com.technology.jep.jepria.client.widget.field.FieldManager</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#fields">fields</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>private &nbsp;com.technology.jep.jepria.client.widget.list.PagingManager</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#list">list</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>private &nbsp;com.technology.jep.jepria.client.widget.toolbar.PagingStandardBar</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#pagingBar">pagingBar</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>private &nbsp;com.google.gwt.user.client.ui.Button</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#searchButton">searchButton</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>private &nbsp;com.google.gwt.user.client.ui.TextBox</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#searchField">searchField</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>private &nbsp;com.google.gwt.user.client.ui.SimplePanel</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#searchStatus">searchStatus</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>private &nbsp;com.google.gwt.user.client.ui.Label</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#userNameLabel">userNameLabel</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.technology.jep.jepria.client.ui.plain.PlainModuleViewImpl"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class com.technology.jep.jepria.client.ui.plain.PlainModuleViewImpl</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>presenter, widget</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#SvnSearcherModuleViewImpl()">SvnSearcherModuleViewImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#addEnterClickListener(com.technology.jep.jepria.client.widget.event.JepListener)">addEnterClickListener</A></B>(com.technology.jep.jepria.client.widget.event.JepListener&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#addSearchButtonClickListener(com.technology.jep.jepria.client.widget.event.JepListener)">addSearchButtonClickListener</A></B>(com.technology.jep.jepria.client.widget.event.JepListener&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#clearStatusPanel()">clearStatusPanel</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;com.technology.jep.jepria.client.widget.field.FieldManager</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#getFieldManager()">getFieldManager</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;com.technology.jep.jepria.client.widget.list.ListManager</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#getListManager()">getListManager</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;com.technology.jep.jepria.client.widget.toolbar.PagingStandardBar</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#getPagingBar()">getPagingBar</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#getSearchText()">getSearchText</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>private static&nbsp;com.google.gwt.user.client.ui.VerticalPanel</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#labelOnTop(com.technology.jep.jepria.client.widget.field.multistate.JepMultiStateField)">labelOnTop</A></B>(com.technology.jep.jepria.client.widget.field.multistate.JepMultiStateField&nbsp;field)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Создает панель с наименованием поля и полем, при этом надпись над полем.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#setUsername(java.lang.String)">setUsername</A></B>(java.lang.String&nbsp;username)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html#updateSearchStatus(com.technology.jep.jepria.shared.load.PagingResult)">updateSearchStatus</A></B>(com.technology.jep.jepria.shared.load.PagingResult&nbsp;pagingResult)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.technology.jep.jepria.client.ui.plain.PlainModuleViewImpl"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.technology.jep.jepria.client.ui.plain.PlainModuleViewImpl</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>asWidget, setPresenter, setWidget</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.technology.jep.jepria.client.ui.JepView"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface com.technology.jep.jepria.client.ui.JepView</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>setPresenter, setWidget</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.IsWidget"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface com.google.gwt.user.client.ui.IsWidget</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>asWidget</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="searchButton"><!-- --></A><H3>
+searchButton</H3>
+<PRE>
+private com.google.gwt.user.client.ui.Button <B>searchButton</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="searchField"><!-- --></A><H3>
+searchField</H3>
+<PRE>
+private com.google.gwt.user.client.ui.TextBox <B>searchField</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="fields"><!-- --></A><H3>
+fields</H3>
+<PRE>
+private com.technology.jep.jepria.client.widget.field.FieldManager <B>fields</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="searchStatus"><!-- --></A><H3>
+searchStatus</H3>
+<PRE>
+private com.google.gwt.user.client.ui.SimplePanel <B>searchStatus</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="list"><!-- --></A><H3>
+list</H3>
+<PRE>
+private com.technology.jep.jepria.client.widget.list.PagingManager <B>list</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="pagingBar"><!-- --></A><H3>
+pagingBar</H3>
+<PRE>
+private com.technology.jep.jepria.client.widget.toolbar.PagingStandardBar <B>pagingBar</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="userNameLabel"><!-- --></A><H3>
+userNameLabel</H3>
+<PRE>
+private com.google.gwt.user.client.ui.Label <B>userNameLabel</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="BAR_HEIGHT"><!-- --></A><H3>
+BAR_HEIGHT</H3>
+<PRE>
+private static final int <B>BAR_HEIGHT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../../constant-values.html#com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain.SvnSearcherModuleViewImpl.BAR_HEIGHT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="BAR_UNIT"><!-- --></A><H3>
+BAR_UNIT</H3>
+<PRE>
+private static final com.google.gwt.dom.client.Style.Unit <B>BAR_UNIT</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SvnSearcherModuleViewImpl()"><!-- --></A><H3>
+SvnSearcherModuleViewImpl</H3>
+<PRE>
+public <B>SvnSearcherModuleViewImpl</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="labelOnTop(com.technology.jep.jepria.client.widget.field.multistate.JepMultiStateField)"><!-- --></A><H3>
+labelOnTop</H3>
+<PRE>
+private static com.google.gwt.user.client.ui.VerticalPanel <B>labelOnTop</B>(com.technology.jep.jepria.client.widget.field.multistate.JepMultiStateField&nbsp;field)</PRE>
+<DL>
+<DD>Создает панель с наименованием поля и полем, при этом надпись над полем. <br/>
+ При этом создается второе наименование.
+ Оригинальное наименование недоступно никак public, поэтому скрыта через css.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>field</CODE> - Поле
+<DT><B>Returns:</B><DD>Панель</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFieldManager()"><!-- --></A><H3>
+getFieldManager</H3>
+<PRE>
+public com.technology.jep.jepria.client.widget.field.FieldManager <B>getFieldManager</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html#getFieldManager()">getFieldManager</A></CODE> in interface <CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain">SvnSearcherModuleView</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearStatusPanel()"><!-- --></A><H3>
+clearStatusPanel</H3>
+<PRE>
+public void <B>clearStatusPanel</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html#clearStatusPanel()">clearStatusPanel</A></CODE> in interface <CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain">SvnSearcherModuleView</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUsername(java.lang.String)"><!-- --></A><H3>
+setUsername</H3>
+<PRE>
+public void <B>setUsername</B>(java.lang.String&nbsp;username)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html#setUsername(java.lang.String)">setUsername</A></CODE> in interface <CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain">SvnSearcherModuleView</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addEnterClickListener(com.technology.jep.jepria.client.widget.event.JepListener)"><!-- --></A><H3>
+addEnterClickListener</H3>
+<PRE>
+public void <B>addEnterClickListener</B>(com.technology.jep.jepria.client.widget.event.JepListener&nbsp;listener)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html#addEnterClickListener(com.technology.jep.jepria.client.widget.event.JepListener)">addEnterClickListener</A></CODE> in interface <CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain">SvnSearcherModuleView</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addSearchButtonClickListener(com.technology.jep.jepria.client.widget.event.JepListener)"><!-- --></A><H3>
+addSearchButtonClickListener</H3>
+<PRE>
+public void <B>addSearchButtonClickListener</B>(com.technology.jep.jepria.client.widget.event.JepListener&nbsp;listener)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html#addSearchButtonClickListener(com.technology.jep.jepria.client.widget.event.JepListener)">addSearchButtonClickListener</A></CODE> in interface <CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain">SvnSearcherModuleView</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSearchText()"><!-- --></A><H3>
+getSearchText</H3>
+<PRE>
+public java.lang.String <B>getSearchText</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html#getSearchText()">getSearchText</A></CODE> in interface <CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain">SvnSearcherModuleView</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getListManager()"><!-- --></A><H3>
+getListManager</H3>
+<PRE>
+public com.technology.jep.jepria.client.widget.list.ListManager <B>getListManager</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html#getListManager()">getListManager</A></CODE> in interface <CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain">SvnSearcherModuleView</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPagingBar()"><!-- --></A><H3>
+getPagingBar</H3>
+<PRE>
+public com.technology.jep.jepria.client.widget.toolbar.PagingStandardBar <B>getPagingBar</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html#getPagingBar()">getPagingBar</A></CODE> in interface <CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain">SvnSearcherModuleView</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="updateSearchStatus(com.technology.jep.jepria.shared.load.PagingResult)"><!-- --></A><H3>
+updateSearchStatus</H3>
+<PRE>
+public void <B>updateSearchStatus</B>(com.technology.jep.jepria.shared.load.PagingResult&nbsp;pagingResult)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html#updateSearchStatus(com.technology.jep.jepria.shared.load.PagingResult)">updateSearchStatus</A></CODE> in interface <CODE><A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain">SvnSearcherModuleView</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../../com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleView.html" title="interface in com.technology.exchange.svnsearcher.svnsearcher.client.ui.plain"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../../index.html?com/technology/exchange/svnsearcher/svnsearcher/client/ui/plain/SvnSearcherModuleViewImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SvnSearcherModuleViewImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

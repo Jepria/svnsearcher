@@ -1,0 +1,21 @@
+-- table: ss_file_exclude_tmp
+-- Файлы для исключения из индексирования.
+create global temporary table
+  ss_file_exclude_tmp
+(
+  file_tmp_id                  integer                             not null
+  , constraint ss_file_exclude_tmp_pk primary key
+    ( file_tmp_id)
+)
+on commit delete rows
+/
+
+
+
+comment on table ss_file_exclude_tmp is
+  'Файлы для исключения из индексирования [ SVN root: Module/SVNSearcher]'
+/
+comment on column ss_file_exclude_tmp.file_tmp_id is
+  'Id файла для исключения из индексирования ( ссылка на svn_file_tmp)'
+/
+

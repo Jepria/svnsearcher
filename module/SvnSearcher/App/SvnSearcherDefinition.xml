@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<application name="SvnSearcher" defaultDatasource="SearchDS" projectPackage="exchange">
+  <modules>
+    <module id="SvnSearcher" name="Поиск по svn" nameEn="Svn Searcher" isBuild="">
+      <roles>
+        <role>SsAll</role>
+      </roles>
+      <db package="pkg_svnsearcher">
+        <find parameters="SEARCH_STRING, PAGE_ROW_COUNT, PAGE_NUMBER, INTERNAL_RESULT_LIMIT, SVN_LOGIN, SVN_PASSWORD, REPOSITORY_NAME, FILE_NAME_LIST, SVN_PATH_LIST, LAST_MODIFICATION_FROM, LAST_MODIFICATION_TO, REVISION_FROM, REVISION_TO, AUTHOR, FILE_SIZE_FROM, FILE_SIZE_TO, ORDER_COLUMN_NAME"/>
+      </db>
+      <record primaryKey="FILE_ID">
+        <field id="FILE_ID" type="INTEGER" name="ID файла" nameEn="" />
+        <field id="REPOSITORY_NAME" type="STRING" name="Наименование репозитория" nameEn="" />
+        <field id="SVN_PATH" type="STRING" name="Путь к файлу в репозитории SVN" nameEn="" />
+        <field id="URL" type="STRING" name="Ссылка" nameEn="" />
+        <field id="FILE_EXTENTION" type="STRING" name="Расширение файла" nameEn="" />
+        <field id="SVN_LAST_MODIFICATION" type="STRING" name="Дата/время модификации в SVN" nameEn="" />
+        <field id="REVISION" type="STRING" name="Номер ревизии в SVN" nameEn="" />
+        <field id="FILE_SIZE" type="STRING" name="Размер файла" nameEn="" />
+        <field id="LAST_CHECK_DATE" type="DATE" name="Дата актуальности" nameEn="" />
+        <field id="LAST_ALL_INDEX_DATE" type="DATE" name="Дата последнего завершения индексирования репозитория" nameEn="" />
+        <field id="RESULT_COUNT" type="INTEGER" name="Количество записей в результате" nameEn="" />
+        <field id="RESULT_ROW_NUMBER" type="INTEGER" name="Номер строки в результате" nameEn="" />
+        <field id="SNIPPET" type="STRING" name="Участок кода, содержащий строку, при наличии доступа" nameEn="" />
+        
+        <field id="SEARCH_STRING" type="STRING" name="Фраза для поиска  (возможен шаблон, содержащий %, ?)" nameEn="" />
+        <field id="PAGE_ROW_COUNT" type="INTEGER" name="Количество записей результатов на странице" nameEn="" />
+        <field id="PAGE_NUMBER" type="INTEGER" name="Номер страницы" nameEn="" />
+        <field id="INTERNAL_RESULT_LIMIT" type="INTEGER" name="Лимит внутреннего поиска для оптимизации производительности" nameEn="" />
+        <field id="SVN_LOGIN" type="STRING" name="Логин SVN для показа куска текста, где найдена строка" nameEn="" />
+        <field id="SVN_PASSWORD" type="STRING" name="Пароль SVN для показа куска текста, где найдена строка" nameEn="" />
+        <field id="FILE_NAME_LIST" type="STRING" name="Список масок для имён файлов" nameEn="" />
+        <field id="SVN_PATH_LIST" type="STRING" name="С писок масок путей к файлу SVN через ," nameEn="" />
+        <field id="LAST_MODIFICATION_FROM" type="DATE" name="Дата модификации файла SVN от" nameEn="" />
+        <field id="LAST_MODIFICATION_TO" type="DATE" name="Дата модификации файла SVN по" nameEn="" />
+        <field id="REVISION_FROM" type="INTEGER" name="Ревизия в SVN от" nameEn="" />
+        <field id="REVISION_TO" type="INTEGER" name="Ревизия в SVN по" nameEn="" />
+        <field id="AUTHOR" type="STRING" name="Автор в SVN" nameEn="" />
+        <field id="FILE_SIZE_FROM" type="INTEGER" name="Размер файла от" nameEn="" />
+        <field id="FILE_SIZE_TO" type="INTEGER" name="Размер файла по" nameEn="" />
+        <field id="ORDER_COLUMN_NAME" type="STRING" name="Сортировать по:" nameEn="" />
+      </record>
+      <forms>
+        <form-detail>
+          
+          <field id="SEARCH_STRING" widget="JepTextField" mandatoryWorkstates="SEARCH" />
+          <field id="PAGE_ROW_COUNT" widget="JepIntegerField" />
+          <field id="PAGE_NUMBER" widget="JepIntegerField" />
+          <field id="INTERNAL_RESULT_LIMIT" widget="JepIntegerField" />
+          <field id="SVN_LOGIN" widget="JepTextField" />
+          <field id="SVN_PASSWORD" widget="JepTextField" />
+          <field id="REPOSITORY_NAME" widget="JepTextField" />
+          <field id="FILE_NAME_LIST" widget="JepListField" />
+          <field id="SVN_PATH_LIST" widget="JepTextField" />
+          <field id="LAST_MODIFICATION_FROM" widget="JepDateField" />
+          <field id="LAST_MODIFICATION_TO" widget="JepDateField" />
+          <field id="REVISION_FROM" widget="JepDateField" />
+          <field id="REVISION_TO" widget="JepDateField" />
+          <field id="AUTHOR" widget="JepTextField" />
+          <field id="ORDER_COLUMN_NAME" widget="JepComboBoxField" />
+          
+        </form-detail>
+        <form-list dblClick="off">
+        
+          <field id="REPOSITORY_NAME"/>
+          <field id="SVN_PATH"/>
+          <field id="URL"/>
+          <field id="FILE_EXTENTION"/>
+          <field id="SVN_LAST_MODIFICATION"/>
+          <field id="REVISION"/>
+          <field id="AUTHOR"/>
+          <field id="FILE_SIZE"/>
+          <field id="LAST_CHECK_DATE"/>
+          <field id="LAST_ALL_INDEX_DATE"/>
+          <field id="RESULT_COUNT"/>
+          <field id="RESULT_ROW_NUMBER"/>
+          <field id="SNIPPET"/>
+
+        </form-list>
+      </forms>
+      <toolbar view="on" presenter="on" />
+    </module>
+  </modules>
+</application>
